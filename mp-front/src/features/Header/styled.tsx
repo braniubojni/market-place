@@ -1,0 +1,18 @@
+import { HEADER_HEIGHT, Z_INDEX_2 } from "@/constants";
+import colors from "@/constants/colors";
+import styled from "styled-components";
+
+
+const Wrapper = styled.div`
+	padding: 14px 20px;
+	display: flex;
+	align-items: center;
+	transition: margin 0.2s ease-out;
+	background-color: ${colors.primary};
+	height: ${HEADER_HEIGHT}px;
+	z-index: ${Z_INDEX_2};
+	color: #fff;
+`
+export {
+	Wrapper
+}

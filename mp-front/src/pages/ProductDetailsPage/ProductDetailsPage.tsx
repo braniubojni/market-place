@@ -1,3 +1,4 @@
+import { PageWrapper } from '@/App.styled'
 import { Helmet } from 'react-helmet'
 
 
@@ -8,7 +9,7 @@ const ProductDetailsPage: React.FC = () => {
 				<title>Product Details - MarketPlace</title>
 			</Helmet>
 
-			<h1>Product Details</h1>
+			<PageWrapper>Product Details</PageWrapper>
 		</>
 	)
 }

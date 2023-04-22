@@ -1,3 +1,4 @@
+import { PageWrapper } from '@/App.styled';
 import { Helmet } from 'react-helmet'
 
 
@@ -7,7 +8,7 @@ const AccountSettingsPage: React.FC = () => {
 			<Helmet>
 				<title>Account Settings - MarketPlace</title>
 			</Helmet>
-			<h1>Account Settings</h1>
+			<PageWrapper>Account Settings</PageWrapper>
 		</>
 	)
 }
