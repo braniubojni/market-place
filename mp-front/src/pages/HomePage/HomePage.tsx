@@ -1,12 +1,17 @@
-import React from 'react'
-import {} from 'react-helmet'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Div } from './styled';
 
-type Props = {}
-
-const HomePage: React.FC = (props: Props) => {
+const HomePage: React.FC = () => {
 	return (
-		<h1>MAIN - MarketPlace</h1>
-	)
-}
+		<>
+			<Helmet>
+				<title>MAIN - MarketPlace</title>
+			</Helmet>
+			<h1>Home page</h1>
+			{/* <Div /> */}
+		</>
+	);
+};
 
-export default HomePage
+export default HomePage;

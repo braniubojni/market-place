@@ -1,14 +1,14 @@
-import { useState } from 'react';
+import PublicRoutes from './routes/PublicRoutes'
+import PrivateRoutes from './routes/PrivateRoutes'
+import { Suspense } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        Test
-      </div>
-    </>
+    <Suspense fallback={'Loading ...'}>
+      <PublicRoutes />
+      {/* <PrivateRoutes /> */}
+    </Suspense>
   );
 }
 
